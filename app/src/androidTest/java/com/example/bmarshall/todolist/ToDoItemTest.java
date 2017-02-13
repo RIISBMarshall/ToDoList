@@ -35,8 +35,6 @@ public class ToDoItemTest {
         assertEquals(19, startDate.get(Calendar.DAY_OF_MONTH));
         assertEquals(5, startDate.get(Calendar.HOUR_OF_DAY));
         assertEquals(20, startDate.get(Calendar.MINUTE));
-
-
     }
 
     @Test
@@ -222,6 +220,13 @@ public class ToDoItemTest {
         toDoItem.changeCompletionStatus();
 
         assertEquals(false, toDoItem.getIsComplete());
+    }
+
+    @Test
+    public void toStringTest(){
+        assertEquals("test", toDoItem.toString());
+        toDoItem.changeCompletionStatus();
+        assertEquals("[COMPLETED] test", toDoItem.toString());
     }
 
 }

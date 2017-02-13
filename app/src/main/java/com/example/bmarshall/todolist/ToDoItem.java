@@ -4,9 +4,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.LinkedList;
 
-/**
- * Created by bmarshall on 1/11/17.
- */
 
 public class ToDoItem {
 
@@ -129,7 +126,7 @@ public class ToDoItem {
 
     public String toString() {
         if (isCompleted) {
-            return "[COMPLETED]  " + title;
+            return "[COMPLETED] " + title;
         } else {
             return title;
         }
